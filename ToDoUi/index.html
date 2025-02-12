@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #app {
+        text-align: center;
+      }
+      .list,
+      .entries {
+        margin-bottom: 20px;
+      }
+      button {
+        margin: 5px 0;
+        padding: 5px 10px;
+      }
+      .entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="lists" class="list">
+        <h2>ToDo-Listen</h2>
+        <button onclick="fetchLists()">Listen aktualisieren</button>
+        <button onclick="addList()">Neue Liste hinzufügen</button>
+        <ul id="lists-container"></ul>
+      </div>
+      <div id="entries" class="entries" style="display: none">
+        <h2 id="entries-title"></h2>
+        <button onclick="backToLists()">Zurück zu den Listen</button>
+        <button onclick="addEntry()">Neuen Eintrag hinzufügen</button>
+        <ul id="entries-container"></ul>
+      </div>
+    </div>
+
+    <script>
+      const BASE_URL = "http://localhost:5000";
+      let currentListId = null;
+
+      // Fetch all lists
+      async function fetchLists() {
+        const response = await fetch(`${BASE_URL}/todo-list`);
+        const lists = await response.json();
+
+        const container = document.getElementById("lists-container");
+        container.innerHTML = "";
+        lists.forEach((list) => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+                    <span>${list.name}</span>
+                    <button onclick="openList('${list.id}', '${list.name}')">Öffnen</button>
+                    <button onclick="deleteList('${list.id}')">Löschen</button>
+                `;
+          container.appendChild(li);
+        });
+      }
+
+      // Add a new list
+      async function addList() {
+        const name = prompt("Name der Liste eingeben:");
+        if (!name) return;
+
+        const response = await fetch(`${BASE_URL}/todo-list`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          fetchLists();
+        } else {
+          alert(result.error || "Fehler beim Hinzufügen der Liste.");
+        }
+      }
+
+      // Delete a list
+      async function deleteList(listId) {
+        const confirmDelete = confirm(
+          "Möchten Sie diese Liste wirklich löschen?"
+        );
+        if (!confirmDelete) return;
+
+        const response = await fetch(`${BASE_URL}/todo-list`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: listId }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          fetchLists();
+        } else {
+          alert(result.error || "Fehler beim Löschen der Liste.");
+        }
+      }
+
+      // Open a list to view its entries
+      async function openList(listId, listName) {
+        currentListId = listId;
+        document.getElementById("lists").style.display = "none";
+        document.getElementById("entries").style.display = "block";
+        document.getElementById(
+          "entries-title"
+        ).innerText = `Einträge in: ${listName}`;
+        fetchEntries();
+      }
+
+      // Fetch entries for the current list
+      async function fetchEntries() {
+        const response = await fetch(
+          `${BASE_URL}/todo-list/${currentListId}/entries`
+        );
+        const entries = await response.json();
+
+        const container = document.getElementById("entries-container");
+        container.innerHTML = "";
+
+        if (response.ok) {
+          entries.forEach((entry) => {
+            const li = document.createElement("li");
+            li.classList.add("entry");
+            li.innerHTML = `
+                        <span>${entry.name}: ${entry.beschreibung}</span>
+                        <button onclick="editEntry('${entry.id}', '${entry.name}', '${entry.beschreibung}')">Bearbeiten</button>
+                        <button onclick="deleteEntry('${entry.id}')">Löschen</button>
+                    `;
+            container.appendChild(li);
+          });
+        } else {
+          alert(entries.error || "Fehler beim Laden der Einträge.");
+        }
+      }
+
+      // Add a new entry to the current list
+      async function addEntry() {
+        const name = prompt("Name des Eintrags eingeben:");
+        if (!name) return;
+
+        const beschreibung = prompt("Beschreibung eingeben:");
+        if (!beschreibung) return;
+
+        const response = await fetch(`${BASE_URL}/todo-list/entry`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            liste_id: currentListId,
+            name,
+            beschreibung,
+          }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          fetchEntries();
+        } else {
+          alert(result.error || "Fehler beim Hinzufügen des Eintrags.");
+        }
+      }
+
+      // Edit an entry
+      async function editEntry(entryId, currentName, currentDescription) {
+        const name = prompt("Name des Eintrags eingeben:", currentName);
+        if (!name) return;
+
+        const beschreibung = prompt(
+          "Beschreibung eingeben:",
+          currentDescription
+        );
+        if (!beschreibung) return;
+
+        const response = await fetch(`${BASE_URL}/todo-list/entry`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            id: entryId,
+            name,
+            beschreibung,
+          }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          fetchEntries();
+        } else {
+          alert(result.error || "Fehler beim Bearbeiten des Eintrags.");
+        }
+      }
+
+      // Delete an entry
+      async function deleteEntry(entryId) {
+        const response = await fetch(`${BASE_URL}/todo-list/entry`, {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: entryId }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          fetchEntries();
+        } else {
+          alert(result.error || "Fehler beim Löschen des Eintrags.");
+        }
+      }
+
+      // Back to lists
+      function backToLists() {
+        document.getElementById("entries").style.display = "none";
+        document.getElementById("lists").style.display = "block";
+      }
+
+      // Initial load
+      fetchLists();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+﻿@using ToDoUi.Models
+
+@inject HttpClient httpClient
+
+<MudDialog>
+    <TitleContent>
+        <MudText Typo="Typo.h6">
+            <MudIcon Icon="@Icons.Material.Filled.Add" Class="mr-3 mb-n1" />
+            Add ToDo-List
+        </MudText>
+    </TitleContent>
+    <DialogContent>
+        <MudTextField T="String" Label="Name" @bind-Value="newList.Name" />
+    </DialogContent>
+    <DialogActions>
+        <MudButton OnClick="Cancel">Cancel</MudButton>
+        <MudButton Color="Color.Success" OnClick="AddList" >Add List</MudButton>
+    </DialogActions>
+</MudDialog>
+@code {
+
+    [CascadingParameter]
+    private IMudDialogInstance MudDialog { get; set; }
+
+    public ToDoListe newList = new ToDoListe();
+
+    private void Cancel() => MudDialog.Cancel();
+
+    private async void AddList()
+    {
+        
+        MudDialog.Close(DialogResult.Ok(newList));
+        
+    }
+}

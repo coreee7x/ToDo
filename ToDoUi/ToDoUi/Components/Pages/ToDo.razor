@@ -1,0 +1,92 @@
+﻿@page "/todo/{listeId}"
+@inject HttpClient httpClient
+@inject IDialogService DialogService
+@inject NavigationManager NavigationManager
+
+@using ToDoUi.Models
+@using ToDoUi.Components.Dialogs
+
+<PageTitle>ToDo-Liste</PageTitle>
+
+<MudAlert Severity="Severity.Normal">
+    You can find the documentation of the API here:
+    <MudLink Href="http://127.0.0.1:5000/docs" Target="_blank" Typo="Typo.body2" Color="Color.Primary">
+        <b>Swagger Documentation</b>
+    </MudLink>
+</MudAlert>
+<br />
+<MudIconButton @onclick="OpenAddDialogAsync" Icon="@Icons.Material.Filled.Add" aria-label="add" />
+<MudTable Items="@Elements" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info">
+    <HeaderContent>
+        <MudTh>Name</MudTh>
+        <MudTh>Description</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd>@context.Name</MudTd>
+        <MudTd>@context.Beschreibung</MudTd>
+        <MudTd>
+            <MudIconButton Icon="@Icons.Material.Filled.Delete"
+                           Color="Color.Error"
+                           OnClick="() => DeleteRow(context)" />
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+@code {
+    [Parameter]
+    public string listeId { get; set; }
+
+    private bool _loading;
+    private List<ToDoEintrag> Elements = new List<ToDoEintrag>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Elements.Count == 0)
+        {   try
+            {
+                Elements = await httpClient.GetFromJsonAsync<List<ToDoEintrag>>($"http://127.0.0.1:5000/todo-list/{listeId}/entries");
+            }
+            catch
+            {
+
+            }
+
+        }
+
+    }
+
+    private async Task OpenAddDialogAsync()
+    {
+        var options = new DialogOptions { CloseOnEscapeKey = true };
+        var dialog = await DialogService.ShowAsync<AddEintragDialog>("Add Dialog", options);
+        var result = await dialog.Result;
+
+        if (result.Data != null)
+        {
+            ToDoEintrag toDoEintrag = (ToDoEintrag)result.Data;
+            toDoEintrag.Liste_id = Guid.Parse(listeId);
+            var res = await httpClient.PostAsJsonAsync<ToDoEintrag>($"http://127.0.0.1:5000/todo-list/{listeId}/entry", toDoEintrag);
+
+            if (res.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                var newToDo = await res.Content.ReadFromJsonAsync<ToDoEintrag>();
+
+                Elements.Add(newToDo);
+            }
+
+        }
+
+    }
+
+
+    private async Task DeleteRow(ToDoEintrag context)
+    {
+        var result = await httpClient.DeleteAsync($"http://127.0.0.1:5000/todo-list/{context.Liste_id}/entry/{context.Id}");
+
+        if (result.IsSuccessStatusCode)
+        {
+            Elements.Remove(context);
+        }
+
+    }
+}
