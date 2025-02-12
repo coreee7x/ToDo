@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4g5CdyLjB32jpuCAnfinplQYGaP7N0iHmKTOVOnA6fE=",
+  "Hash": "8pmDXunDs4urQTWknqteb1r11NdwwUl2iSAhkSMYlcI=",
   "Source": "ToDoUi",
   "BasePath": "_content/ToDoUi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ToDoUi\\wwwroot",
       "Source": "ToDoUi",
-      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\",
       "BasePath": "_content/ToDoUi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
+      "Identity": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css",
       "AssetKind": "All",
@@ -31,17 +31,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qcudlz6uj5",
-      "Integrity": "FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=",
+      "Fingerprint": "32p77bvc6j",
+      "Integrity": "ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "Identity": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js",
       "AssetKind": "All",
@@ -52,17 +52,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "179icbga5v",
-      "Integrity": "8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=",
+      "Fingerprint": "r91md4kz0z",
+      "Integrity": "EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-179icbga5v.gz",
+      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-r91md4kz0z.gz",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.js.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "RelatedAsset": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ewa8tip8q9",
-      "Integrity": "0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w=",
+      "Fingerprint": "qy82zvxqn6",
+      "Integrity": "HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-qcudlz6uj5.gz",
+      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-32p77bvc6j.gz",
       "SourceId": "MudBlazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/MudBlazor",
       "RelativePath": "MudBlazor.min.css.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
+      "RelatedAsset": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4mivbf9a0g",
-      "Integrity": "BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4=",
+      "Fingerprint": "zvqyo1nr33",
+      "Integrity": "n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css"
+      "OriginalItemSpec": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css"
     },
     {
-      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
+      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
       "SourceId": "ToDoUi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ToDoUi",
       "RelativePath": "favicon#[.{fingerprint=2jeq8efc6q}]?.ico.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
+      "RelatedAsset": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "3ren6c1acn",
       "Integrity": "b7CPHqpoIGsGVgOrEO+r2XPyaLrLUBwkA6R2jOMbS7M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico"
+      "OriginalItemSpec": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
       "SourceId": "ToDoUi",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\",
       "BasePath": "_content/ToDoUi",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -145,8 +145,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "_content/MudBlazor/MudBlazor.min.179icbga5v.js",
-      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
+      "Route": "_content/MudBlazor/MudBlazor.min.32p77bvc6j.css",
+      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -159,348 +159,29 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "54286"
+          "Value": "595613"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "text/css"
         },
         {
           "Name": "ETag",
-          "Value": "\"8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=\""
+          "Value": "\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "179icbga5v"
+          "Value": "32p77bvc6j"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0="
-        },
-        {
-          "Name": "label",
-          "Value": "_content/MudBlazor/MudBlazor.min.js"
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "595660"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-qcudlz6uj5.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000015404760"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64914"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-qcudlz6uj5.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64914"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-BPk5tEIQ4vzt4QFGep7e3Rg/Buj/Jj3Gp9HWSFt7TN4="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "54286"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-179icbga5v.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000087199163"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11467"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8+iZ8ET0xqP09OvKHJWYGFCjPZyiASD7Kl1tcdK6rj0="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-179icbga5v.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11467"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0sHqFHDvD2ToJe6rWyRzxeEUCbLU34DfR884vWXjH5w="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.qcudlz6uj5.css",
-      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.1.0\\staticwebassets\\MudBlazor.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "595660"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 26 Jan 2025 19:20:26 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qcudlz6uj5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FqTaEL8BV9TzyL9nukyntnIBb53h0pKRWBtQP5F09MY="
+          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
         },
         {
           "Name": "label",
@@ -509,8 +190,327 @@
       ]
     },
     {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-32p77bvc6j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000015407134"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64904"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\tzxjg6is5z-32p77bvc6j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n6h0Nqt2RoVyx+Q8vb5VTOpdWX74GuUViVBlcqda/EU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-r91md4kz0z.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000085455478"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11701"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\0wz98yz2xy-r91md4kz0z.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HvcA23eXt8q3eIfGTq2eivWf+pQgHvnwSt8Y4bxeGpA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.r91md4kz0z.js",
+      "AssetFile": "C:\\Users\\F.Beck\\.nuget\\packages\\mudblazor\\8.2.0\\staticwebassets\\MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55249"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r91md4kz0z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/MudBlazor/MudBlazor.min.js"
+        }
+      ]
+    },
+    {
       "Route": "favicon.2jeq8efc6q.ico",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -573,7 +573,7 @@
     },
     {
       "Route": "favicon.2jeq8efc6q.ico",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -618,7 +618,7 @@
     },
     {
       "Route": "favicon.2jeq8efc6q.ico.gz",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -671,7 +671,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -726,7 +726,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -763,7 +763,7 @@
     },
     {
       "Route": "favicon.ico.gz",
-      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
+      "AssetFile": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\Debug\\net9.0\\compressed\\wq8n5fgta7-2jeq8efc6q.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

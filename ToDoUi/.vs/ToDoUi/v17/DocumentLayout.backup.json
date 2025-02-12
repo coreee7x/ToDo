@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\",
+  "WorkspaceRootPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\pages\\todo.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\dialogs\\addeintragdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\dialogs\\addeintragdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\dialogs\\addeintragdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\models\\todoeintrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\models\\todoeintrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\models\\todoeintrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\dialogs\\addlistdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\dialogs\\addlistdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\dialogs\\addlistdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\models\\todoliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\models\\todoliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\models\\todoliste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todoui\\todoui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|c:\\users\\f.beck\\onedrive - solarlux gmbh\\documents\\berufsschule\\lf9\\todo\\todoui\\todoui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D621BCE0-E12C-4A73-AB53-0AD5874FC1CC}|ToDoUi\\ToDoUi.csproj|solutionrelative:todoui\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -84,9 +84,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AddEintragDialog.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddEintragDialog.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddEintragDialog.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Dialogs\\AddEintragDialog.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddEintragDialog.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddEintragDialog.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Dialogs\\AddEintragDialog.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -96,9 +96,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Weather.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Pages\\Weather.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Pages\\Weather.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Pages\\Weather.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Pages\\Weather.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Pages\\Weather.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -108,11 +108,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ToDo.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Pages\\ToDo.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Pages\\ToDo.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Pages\\ToDo.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Pages\\ToDo.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Pages\\ToDo.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Pages\\ToDo.razor",
-              "ViewState": "AgIAADIAAAAAAAAAAAAkwDsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-30T14:50:16.632Z",
               "EditorCaption": ""
@@ -121,9 +121,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AddListDialog.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddListDialog.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddListDialog.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Dialogs\\AddListDialog.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddListDialog.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Dialogs\\AddListDialog.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Dialogs\\AddListDialog.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -133,9 +133,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Program.cs",
               "RelativeDocumentMoniker": "ToDoUi\\Program.cs",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Program.cs",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Program.cs",
               "RelativeToolTip": "ToDoUi\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,9 +145,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "ToDoEintrag.cs",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Models\\ToDoEintrag.cs",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Models\\ToDoEintrag.cs",
               "RelativeDocumentMoniker": "ToDoUi\\Models\\ToDoEintrag.cs",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Models\\ToDoEintrag.cs",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Models\\ToDoEintrag.cs",
               "RelativeToolTip": "ToDoUi\\Models\\ToDoEintrag.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,9 +157,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ToDoListe.cs",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Models\\ToDoListe.cs",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Models\\ToDoListe.cs",
               "RelativeDocumentMoniker": "ToDoUi\\Models\\ToDoListe.cs",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Models\\ToDoListe.cs",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Models\\ToDoListe.cs",
               "RelativeToolTip": "ToDoUi\\Models\\ToDoListe.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,22 +169,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Pages\\Home.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAABUAAAAAAAAAAAAkwDsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-29T11:28:40.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T11:28:40.156Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Layout\\MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -194,9 +193,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Layout\\NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "ToDoUi\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\Components\\Layout\\NavMenu.razor",
               "RelativeToolTip": "ToDoUi\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

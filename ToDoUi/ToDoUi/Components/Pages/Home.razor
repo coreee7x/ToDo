@@ -10,7 +10,7 @@
 
 <MudAlert Severity="Severity.Normal">
     You can find the documentation of the API here:
-    <MudLink Href="http://127.0.0.1:5000/docs" Target="_blank" Typo="Typo.body2" Color="Color.Primary">
+    <MudLink Href="@($"{domain}/docs")" Target="_blank" Typo="Typo.body2" Color="Color.Primary">
         <b>Swagger Documentation</b>
     </MudLink>
 </MudAlert>
@@ -37,11 +37,13 @@
     private bool _loading;
     private List<ToDoListe> Elements = new List<ToDoListe>();
 
+    public static string domain = "http://coreee7x.de:5000";
+
     protected override async Task OnInitializedAsync()
     {
         if(Elements.Count == 0)
         {
-            Elements = await httpClient.GetFromJsonAsync<List<ToDoListe>>("http://127.0.0.1:5000/todo-lists");
+            Elements = await httpClient.GetFromJsonAsync<List<ToDoListe>>($"{domain}/todo-lists");
         }
 
     }
@@ -55,7 +57,7 @@
         if(result.Data != null)
         {
 
-            var res = await httpClient.PostAsJsonAsync<ToDoListe>("http://127.0.0.1:5000/todo-list", (ToDoListe)result.Data);
+            var res = await httpClient.PostAsJsonAsync<ToDoListe>($"{domain}/todo-list", (ToDoListe)result.Data);
 
             if (res.StatusCode == System.Net.HttpStatusCode.OK)
             {
@@ -75,7 +77,7 @@
 
     private async Task DeleteRow(ToDoListe context)
     {
-        var result = await httpClient.DeleteAsync($"http://127.0.0.1:5000/todo-list/{context.Id}");
+        var result = await httpClient.DeleteAsync($"{domain}/todo-list/{context.Id}");
 
         if(result.IsSuccessStatusCode)
         {

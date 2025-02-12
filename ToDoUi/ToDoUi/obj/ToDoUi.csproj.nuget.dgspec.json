@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\ToDoUi.csproj": {}
+    "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\ToDoUi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\ToDoUi.csproj": {
+    "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\ToDoUi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
+        "projectUniqueName": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
         "projectName": "ToDoUi",
-        "projectPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
+        "projectPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
         "packagesPath": "C:\\Users\\F.Beck\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\",
+        "outputPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

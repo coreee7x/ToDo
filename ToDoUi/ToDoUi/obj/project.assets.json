@@ -227,7 +227,7 @@
           }
         }
       },
-      "MudBlazor/8.1.0": {
+      "MudBlazor/8.2.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components": "9.0.1",
@@ -611,10 +611,10 @@
         "microsoft.jsinterop.nuspec"
       ]
     },
-    "MudBlazor/8.1.0": {
-      "sha512": "dihLpDD7R2295u21puv+zLy72NiwGU6ASPOTg6GGye5D4g4cAczi4vPioKQfsgvdq+VsMHE3Cpm4KT3A+6LcVQ==",
+    "MudBlazor/8.2.0": {
+      "sha512": "VmXphzNw3Y295G5WmL/6G9suXAwoggGZsrHL4CMcO9EQ//mEc2HX3GMEpkWZNJ1Be0u1aZlnw40E51X+F6Qflg==",
       "type": "package",
-      "path": "mudblazor/8.1.0",
+      "path": "mudblazor/8.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -632,7 +632,7 @@
         "lib/net8.0/MudBlazor.xml",
         "lib/net9.0/MudBlazor.dll",
         "lib/net9.0/MudBlazor.xml",
-        "mudblazor.8.1.0.nupkg.sha512",
+        "mudblazor.8.2.0.nupkg.sha512",
         "mudblazor.nuspec",
         "staticwebassets/MudBlazor.min.css",
         "staticwebassets/MudBlazor.min.js"
@@ -651,11 +651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
+      "projectUniqueName": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
       "projectName": "ToDoUi",
-      "projectPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
+      "projectPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\ToDoUi.csproj",
       "packagesPath": "C:\\Users\\F.Beck\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDoUi\\ToDoUi\\obj\\",
+      "outputPath": "C:\\Users\\F.Beck\\OneDrive - Solarlux GmbH\\Documents\\Berufsschule\\LF9\\ToDo\\ToDoUi\\ToDoUi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

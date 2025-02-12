@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "ToDoUi/1.0.0": {
         "dependencies": {
-          "MudBlazor": "8.1.0"
+          "MudBlazor": "8.2.0"
         },
         "runtime": {
           "ToDoUi.dll": {}
@@ -71,7 +71,7 @@
       },
       "Microsoft.Extensions.Primitives/9.0.1": {},
       "Microsoft.JSInterop/9.0.1": {},
-      "MudBlazor/8.1.0": {
+      "MudBlazor/8.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "9.0.1",
           "Microsoft.AspNetCore.Components.Web": "9.0.1",
@@ -79,8 +79,8 @@
         },
         "runtime": {
           "lib/net9.0/MudBlazor.dll": {
-            "assemblyVersion": "8.1.0.0",
-            "fileVersion": "8.1.0.0"
+            "assemblyVersion": "8.2.0.0",
+            "fileVersion": "8.2.0.0"
           }
         }
       }
@@ -190,12 +190,12 @@
       "path": "microsoft.jsinterop/9.0.1",
       "hashPath": "microsoft.jsinterop.9.0.1.nupkg.sha512"
     },
-    "MudBlazor/8.1.0": {
+    "MudBlazor/8.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dihLpDD7R2295u21puv+zLy72NiwGU6ASPOTg6GGye5D4g4cAczi4vPioKQfsgvdq+VsMHE3Cpm4KT3A+6LcVQ==",
-      "path": "mudblazor/8.1.0",
-      "hashPath": "mudblazor.8.1.0.nupkg.sha512"
+      "sha512": "sha512-VmXphzNw3Y295G5WmL/6G9suXAwoggGZsrHL4CMcO9EQ//mEc2HX3GMEpkWZNJ1Be0u1aZlnw40E51X+F6Qflg==",
+      "path": "mudblazor/8.2.0",
+      "hashPath": "mudblazor.8.2.0.nupkg.sha512"
     }
   }
 }

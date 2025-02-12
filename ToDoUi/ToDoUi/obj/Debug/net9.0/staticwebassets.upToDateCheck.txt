@@ -1,2 +1,2 @@
-C:\Users\F.Beck\OneDrive - Solarlux GmbH\Documents\Berufsschule\LF9\ToDoUi\ToDoUi\wwwroot\favicon.ico
+C:\Users\F.Beck\OneDrive - Solarlux GmbH\Documents\Berufsschule\LF9\ToDo\ToDoUi\ToDoUi\wwwroot\favicon.ico
 wwwroot\favicon.ico
