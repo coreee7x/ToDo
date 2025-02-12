@@ -1,0 +1,218 @@
+openapi: 3.0.0
+info:
+  title: ToDo API
+  description: API zur Verwaltung von ToDo-Listen und -Einträgen
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:5000
+    description: Lokale Entwicklungsumgebung
+
+paths:
+  /todo-lists:
+    get:
+      summary: Gibt alle ToDo-Listen zurück
+      responses:
+        "200":
+          description: Erfolgreiche Antwort mit allen Listen
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TodoListe"
+
+  /todo-list:
+    post:
+      summary: Fügt eine neue ToDo-Liste hinzu
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+              properties:
+                name:
+                  type: string
+      responses:
+        "200":
+          description: Liste erfolgreich hinzugefügt
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodoListe"
+        "400":
+          description: Fehlerhafte Anfrage
+
+  /todo-list/{liste_id}/entries:
+    get:
+      summary: Gibt alle Einträge einer bestimmten ToDo-Liste zurück
+      parameters:
+        - name: liste_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: Erfolgreiche Antwort mit allen Einträgen
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TodoEintrag"
+        "404":
+          description: Keine Einträge gefunden
+
+  /todo-list/{liste_id}/entry:
+    post:
+      summary: Fügt einen neuen Eintrag zu einer bestehenden ToDo-Liste hinzu
+      parameters:
+        - name: liste_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - beschreibung
+              properties:
+                name:
+                  type: string
+                beschreibung:
+                  type: string
+      responses:
+        "200":
+          description: Eintrag erfolgreich hinzugefügt
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodoEintrag"
+        "400":
+          description: Fehlende Felder
+        "404":
+          description: Liste existiert nicht
+
+  /todo-list/{liste_id}/entry/{eintrag_id}:
+    put:
+      summary: Aktualisiert einen Eintrag einer ToDo-Liste
+      parameters:
+        - name: liste_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: eintrag_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+                - beschreibung
+              properties:
+                name:
+                  type: string
+                beschreibung:
+                  type: string
+      responses:
+        "200":
+          description: Eintrag erfolgreich aktualisiert
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodoEintrag"
+        "400":
+          description: Fehlende Felder
+        "404":
+          description: Eintrag existiert nicht
+
+    delete:
+      summary: Löscht einen Eintrag aus einer ToDo-Liste
+      parameters:
+        - name: liste_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: eintrag_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        "200":
+          description: Eintrag erfolgreich gelöscht
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  id:
+                    type: string
+                    format: uuid
+        "404":
+          description: Eintrag existiert nicht
+
+  /todo-list/{liste_id}:
+    delete:
+      summary: Löscht eine komplette ToDo-Liste mit allen Einträgen
+      parameters:
+        - name: liste_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Liste und zugehörige Einträge erfolgreich gelöscht
+        "404":
+          description: Liste existiert nicht
+
+components:
+  schemas:
+    TodoListe:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+
+    TodoEintrag:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        beschreibung:
+          type: string
+        liste_id:
+          type: string
+          format: uuid
