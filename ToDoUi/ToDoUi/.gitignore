@@ -1,0 +1,81 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# Visual Studio specific
+.vscode/
+.vs/
+*.sln.cache
+*.sln.ide
+
+# .NET dependency folders
+packages/
+.nuget/
+
+# Logs and temp files
+*.log
+logs/
+temp/
+*.tmp
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# ASP.NET Core secrets
+secrets.json
+
+# Rider and JetBrains IDEs
+.idea/
+*.iml
+
+# Publish output
+wwwroot/dist/
+wwwroot/node_modules/
+node_modules/
+dist/
+wwwroot/css/
+wwwroot/js/
+
+# Blazor WebAssembly specific
+wwwroot/_framework/
+wwwroot/_content/
+
+# Docker files
+**/[Dd]ockerfile*
+**/[Dd]ocker-*
+
+# Entity Framework Migrations
+Migrations/
+
+# Coverage and testing files
+TestResults/
+.coverage/
+coverage/
+
+# Compiled files
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.ilk
+*.obj
+*.lib
+*.nupkg
+*.snupkg
+*.cache
+*.manifest
+
+# Rider and Resharper
+*.DotSettings.user
+_ReSharper*/
