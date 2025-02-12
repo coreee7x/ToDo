@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  todoapi:
+    container_name: ToDoApi
+    build: ToDoApi
+    ports:
+      - 5000:5000
+  todoui:
+    container_name: ToDoUi
+    build: ToDoUi
+    ports:
+      - 5001:8080
+    depends_on:
+      - todoapi
