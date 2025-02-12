@@ -7,6 +7,8 @@ info:
 servers:
   - url: http://localhost:5000
     description: Lokale Entwicklungsumgebung
+  - url: http://coreee7x.de:5000
+    description: Image im Docker
 
 paths:
   /todo-lists:
