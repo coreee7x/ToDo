@@ -80,7 +80,7 @@ def insertEintrag(liste_id):
         "id": eintrag_id,
         "name": params['name'],
         "beschreibung": params['beschreibung'],
-        "liste_id": liste_id
+        "liste_id": str(liste_id)
     })
     return jsonify({"id": eintrag_id, "name": params['name'], "beschreibung": params['beschreibung']}), 200
 
