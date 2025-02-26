@@ -115,7 +115,7 @@ def deleteEintrag(liste_id, eintrag_id):
     eintrag = []
 
     for item in todo_einträge:
-        if item['id'] == eintrag_id:
+        if item['id'] == str(eintrag_id):
             eintrag = item
             break
     
@@ -133,7 +133,7 @@ def deleteListe(liste_id):
     liste = []
 
     for item in todo_listen:
-        if item['id'] == liste_id:
+        if item['id'] == str(liste_id):
             liste = item
             break
     
