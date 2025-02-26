@@ -14,6 +14,9 @@
         <b>Swagger Documentation</b>
     </MudLink>
 </MudAlert>
+<MudIconButton Icon="@Icons.Material.Filled.ArrowBack"
+               Color="Color.Primary"
+               OnClick="() => BackToStart()" />
 <br />
 <MudIconButton @onclick="OpenAddDialogAsync" Icon="@Icons.Material.Filled.Add" aria-label="add" />
 <MudTable Items="@Elements" Hover="true" Breakpoint="Breakpoint.Sm" Loading="@_loading" LoadingProgressColor="Color.Info">
@@ -85,4 +88,9 @@
             Elements.Remove(context);
         }
     }
+
+	private void BackToStart()
+	{
+		NavigationManager.NavigateTo("/");
+	}
 }
