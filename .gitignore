@@ -1,4 +1,4 @@
-ToDoUi\.vs
+ToDoUi/.vs
 ToDoUi/.vs/ProjectEvaluation/todoui.metadata.v9.bin
 ToDoUi/.vs/ProjectEvaluation/todoui.metadata.v9.bin
 ToDoUi/.vs/ProjectEvaluation/todoui.projects.v9.bin
@@ -24,3 +24,4 @@ ToDoUi/ToDoUi/obj/Debug/net9.0/ToDoUi.GeneratedMSBuildEditorConfig.editorconfig
 ToDoUi/ToDoUi/obj/Debug/net9.0/ToDoUi.pdb
 ToDoUi/ToDoUi/obj/Debug/net9.0/ref/ToDoUi.dll
 ToDoUi/ToDoUi/obj/Debug/net9.0/refint/ToDoUi.dll
+ToDoUi/ToDoUi/obj

@@ -9,6 +9,7 @@ out/
 *.userosscache
 *.sln.docstates
 .vscode/
+ToDoUi\.vs
 
 # Visual Studio specific
 .vscode/
