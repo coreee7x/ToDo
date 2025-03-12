@@ -49,7 +49,7 @@ Dies ist eine einfache ToDo-Anwendung, die aus einer API (ToDoApi) und einer Ben
 Um sowohl die API als auch die UI über Docker bereitzustellen, kannst du einfach folgenden Befehl ausführen:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Dadurch werden die beiden Container gestartet und die Anwendung ist unter den oben angegebenen Ports erreichbar.
