@@ -31,17 +31,18 @@
 
 ---
 
-## 👤 Benutzer erstellen
+## Benutzer erstellen
 
 ### Benutzer `fernzugriff` erstellen (mit `sudo`-Rechten):
 ```bash
-sudo adduser fernzugriff    # Passwort: Test123
-sudo usermod -aG sudo fernzugriff
+sudo adduser fernzugriff                # Passwort: Test123
+sudo usermod -aG sudo fernzugriff       # Sudo Rechte vergeben
 ```
 
 ### Benutzer `willi` erstellen:
 ```bash
-sudo adduser willi          # Passwort: Test123
+sudo adduser willi                      # Passwort: Test123
+sudo usermod -s /usr/sbin/nologin willi # SSH Rechte entfernen
 ```
 
 ---
@@ -86,6 +87,13 @@ exit
    ```bash
    git clone https://github.com/coreee7x/ToDo.git
    ```
+
+Wenn sich im Repository etwas ändern sollte kann man sich mit
+´´´bash
+git pull
+´´´
+Den aktuellen Stand herunterladen
+Danach muss der Container erneut gestartet werden
 
 ---
 
