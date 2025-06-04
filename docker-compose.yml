@@ -4,11 +4,13 @@ services:
   todoapi:
     container_name: ToDoApi
     build: ToDoApi
+    restart: unless-stopped
     ports:
       - 5000:5000
   todoui:
     container_name: ToDoUi
     build: ToDoUi
+    restart: unless-stopped
     ports:
       - 5001:8080
     depends_on:
