@@ -88,12 +88,8 @@ exit
    git clone https://github.com/coreee7x/ToDo.git
    ```
 
-Wenn sich im Repository etwas ändern sollte kann man sich mit
-´´´bash
-git pull
-´´´
-Den aktuellen Stand herunterladen
-Danach muss der Container erneut gestartet werden
+> Wenn sich im Repository etwas ändern sollte kann man sich mit `git pull` den aktuellen Stand herunterladen
+> Danach muss der Container erneut gestartet werden
 
 ---
 
