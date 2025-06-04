@@ -90,11 +90,11 @@ exit
 
 > Wenn sich im Repository etwas ändern sollte muss man den aktuellen Stand aus dem Git herunterladen.
 > Danach muss der Container erneut gebuilded und dann gestartet werden
-```bash
-git pull
-sudo docker compose down
-sudo docker compose up -d --build
-```
+> ```bash
+> git pull
+> sudo docker compose down
+> sudo docker compose up -d --build
+> ```
 
 ---
 
