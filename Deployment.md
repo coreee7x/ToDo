@@ -88,8 +88,13 @@ exit
    git clone https://github.com/coreee7x/ToDo.git
    ```
 
-> Wenn sich im Repository etwas ändern sollte kann man sich mit `git pull` den aktuellen Stand herunterladen
-> Danach muss der Container erneut gestartet werden
+> Wenn sich im Repository etwas ändern sollte muss man den aktuellen Stand aus dem Git herunterladen.
+> Danach muss der Container erneut gebuilded und dann gestartet werden
+```bash
+git pull
+sudo docker compose down
+sudo docker compose up -d --build
+```
 
 ---
 
@@ -104,3 +109,4 @@ Dann Container im Hintergrund starten:
 ```bash
 sudo docker compose up -d
 ```
+> Das Argument `-d` führt dazu, dass der Container im Hintergrund gestartet wird, wenn man diesen weglässt kommt man in die CLI des Programms
