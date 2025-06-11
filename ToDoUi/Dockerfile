@@ -17,4 +17,4 @@ WORKDIR /app
 COPY --from=build /out ./
 ENTRYPOINT ["dotnet", "ToDoUi.dll"]
 
-EXPOSE 80
+EXPOSE 5000
