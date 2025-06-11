@@ -89,7 +89,7 @@ exit
    ```
 
 > Wenn sich im Repository etwas ändern sollte muss man den aktuellen Stand aus dem Git herunterladen.
-> Danach muss der Container erneut gebuilded und dann gestartet werden
+> Danach muss der Container erneut gebuilded und gestartet werden
 > ```bash
 > git pull
 > sudo docker compose down
@@ -109,4 +109,54 @@ Dann Container im Hintergrund starten:
 ```bash
 sudo docker compose up -d
 ```
-> Das Argument `-d` führt dazu, dass der Container im Hintergrund gestartet wird, wenn man diesen weglässt kommt man in die CLI des Programms
+> Das Argument `-d` führt dazu, dass der Container im Hintergrund gestartet wird, wenn man diesen weglässt kommt man in die CLI des Programms.
+
+# Bonusaufgaben
+## 1) ufw konfigurieren
+
+> ufw (uncomplicated Firewall) ist eine Firewall, welche den Raspberry Pi schützt, indem sie nur ausgewählte Netzwerkzugriffe erlaubt. So bleiben interne Dienste und Ports vor unbefugtem Zugriff von außen sicher.
+
+### ufw installieren
+```bash
+sudo apt install ufw
+```
+
+### Benötigte Ports freigeben
+Nun müssen die benötigten Ports, in diesem Fall für SSH (22) und Websites (80 | 443) freigegeben werden, damit man den Pi noch sowohl über SSH erreicht, zum weiteren konfigurieren, als auch die Website erreichen kann.
+```bash
+# SSH-Zugriff erlauben
+sudo ufw allow ssh
+
+# HTTP (für unverschlüsselte Webzugriffe)
+sudo ufw allow 80
+
+# HTTPS (für verschlüsselte Webzugriffe)
+sudo ufw allow 443
+```
+> [!WARNING]
+> Wenn du diesen Schritt überspringst ist er Raspberry Pi nach dem aktivieren der Firewall nicht mehr über SSH zu erreichen und du musst den Pi an Monitor, Maus und Tastatur anschließen um weiter zu machen!
+
+### Firewall aktivieren
+```bash
+sudo ufw enable
+```
+Die Firewall ist nun aktiviert und lässt nur Kommunikation mit den oben genannten Ports zu.
+
+Nun kann noch der Status der Firewall überprüft werden, um sicher zu gehen, dass alles Funktioniert.
+```bash
+sudo ufw status
+```
+
+| Port       | Aktion | Quelle           |
+|------------|--------|------------------|
+| 22/tcp     | ALLOW  | Anywhere         |
+| 80         | ALLOW  | Anywhere         |
+| 443        | ALLOW  | Anywhere         |
+| 22/tcp (v6)| ALLOW  | Anywhere (v6)    |
+| 80 (v6)    | ALLOW  | Anywhere (v6)    |
+| 443 (v6)   | ALLOW  | Anywhere (v6)    |
+
+Wenn es so aussieht hat alles geklappt und die Firewall ist aktiviert.
+
+## 2) Reverse Proxy einrichten
+
