@@ -8,6 +8,7 @@ services:
       - "--api.dashboard=true"
       - "--providers.docker=true"
       - "--entrypoints.web.address=:80"
+      - "--log.level=DEBUG"
     ports:
       - "80:80"
     volumes:
