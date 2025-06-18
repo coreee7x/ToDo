@@ -16,6 +16,8 @@ services:
       - "traefik.http.routers.traefik.rule=PathPrefix(`/dashboard`) || PathPrefix(`/api`)"
       - "traefik.http.routers.traefik.service=api@internal"
       - "traefik.http.routers.traefik.entrypoints=web"
+    networks:
+      - traefik-net
 
   todoapi:
     container_name: ToDoApi
@@ -27,6 +29,8 @@ services:
       - "traefik.http.services.api.loadbalancer.server.port=3000"
       - "traefik.http.middlewares.api-strip.stripprefix.prefixes=/api"
       - "traefik.http.routers.api.middlewares=api-strip"
+    networks:
+      - traefik-net
   todoui:
     container_name: ToDoUi
     build: ToDoUi
@@ -37,3 +41,11 @@ services:
       - "traefik.http.services.web.loadbalancer.server.port=80"
     depends_on:
       - todoapi
+    networks:
+      - traefik-net
+
+networks:
+  traefik-net:
+    driver: bridge
+
+
