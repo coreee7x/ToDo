@@ -150,7 +150,7 @@ services:
     build: ToDoUi                              # Verwendet das lokale Build-Context-Verzeichnis `ToDoUi`
     restart: unless-stopped                   # Startet den Container automatisch neu, außer er wurde manuell gestoppt
     labels:
-      - "traefik.http.routers.web.rule=PathPrefix(`/ui`)"      # Fängt alle sonstigen Pfade ab
+      - "traefik.http.routers.web.rule=PathPrefix(`/`)"      # Fängt alle sonstigen Pfade ab
       - "traefik.http.routers.web.priority=1"                # Niedrigere Priorität als `/api`, damit API eher erreichbar ist
       - "traefik.http.services.web.loadbalancer.server.port=8080"  # Interner Port der UI-Anwendung 
     depends_on:
