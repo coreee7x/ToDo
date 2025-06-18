@@ -22,7 +22,7 @@
    Gateway=192.168.24.254
    DNS=192.168.24.254
    ```
-   Gateway und DNS müssen so angepasst werden, dass sie zu dem eigenen Netzwerk passen. Als IP-Adresse kann eine beliebige freie im Netzwerk gewählt werden. 
+   Gateway und DNS müssen zum eigenen Netzwerk passen. Als IP-Adresse sollte eine im Netzwerk freie Adresse gewählt werden. 
 
 3. Netzwerkdienst aktivieren und neu starten:
    ```bash
@@ -43,7 +43,7 @@ sudo usermod -aG sudo fernzugriff       # Sudo Rechte vergeben
 ### Benutzer `willi` erstellen:
 ```bash
 sudo adduser willi                      # Passwort: Test123
-sudo usermod -s /usr/sbin/nologin willi # SSH Rechte entfernen
+sudo usermod -s /usr/sbin/nologin willi # Login über SSH verhindern
 ```
 Während der Benutzererstellung wirst du zur Eingabe eines Passworts aufgefordert. Danach folgen weitere optionale Angaben (wie Name, Telefonnummer usw.), die leer gelassen werden können.
 
@@ -65,14 +65,14 @@ sudo usermod -aG docker fernzugriff
 ```bash
 exit
 ```
-> Danach erneut mit dem Benutzer einloggen, damit die Rechte aktiviert werden.
+> Danach erneut mit dem Benutzer fernzugriff einloggen, damit die Docker-Gruppenrechte aktiv werden.
 
 ---
 
 ## Repository vom Programm holen
 
 ### Möglichkeit 1: Manuell per SSH oder Dateiübertragung
-Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (bspw. über VS Code) das Repository einfach per Drag und Drop auf den Raspberry Pi ziehen. Wenn sich die Software allerdings öfters ändert ist es meist einfacher mit Möglichkeit 2 das Repo auf den Pi zu bekommen.
+Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (zum Beispiel über VS Code) das Repository einfach per Drag und Drop auf den Raspberry Pi ziehen. Wenn sich die Software allerdings öfters ändert ist es meist einfacher mit Möglichkeit 2 das Repo auf den Pi zu bekommen.
 
 ### Möglichkeit 2: Per `git clone`
 
@@ -91,7 +91,7 @@ Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (bspw. übe
    git clone https://github.com/coreee7x/ToDo.git
    ```
 
-> Wenn sich im Repository etwas ändern sollte muss man den aktuellen Stand aus dem Git herunterladen.
+> Wenn sich im Repository etwas ändern sollte, muss man den aktuellen Stand aus dem Git herunterladen.
 > Danach muss der Container erneut gebuilded und gestartet werden
 > ```bash
 > git pull
@@ -102,8 +102,10 @@ Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (bspw. übe
 ---
 
 ## Docker-Container starten
+Die "docker-compose.yml" enthält die Konfigurationen für die Docker-Container und ergänzt die Dockerfiles.
 
 ```yaml
+## docker-compose.yml
 version: "3.9"
 
 services:
@@ -116,10 +118,10 @@ services:
       - "--providers.docker=true"              # Aktiviert die automatische Konfiguration basierend auf Docker-Labels
       - "--entrypoints.web.address=:80"        # Legt den EntryPoint für HTTP auf Port 80 fest
       - "--log.level=DEBUG"                    # Detailliertes Logging für Debugging aktivieren
-# Über Standardport erreichbar (alles läuft über den Proxy)
+# Über den Standardport erreichbar (alles läuft über den Proxy)
     ports:
       - "80:80"                                # Exposed Traefik auf Port 80 nach außen
-# Das Volume sorgt dafür, dass die Daten des Proxys auch nach einem Neustart/Build gespeichert bleiben
+# Das Volume sorgt dafür, dass Traefik die Docker-Informationen auch nach einem Neustart nutzen kann
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"  
 # Labels
@@ -150,7 +152,7 @@ services:
     build: ToDoUi                              # Verwendet das lokale Build-Context-Verzeichnis `ToDoUi`
     restart: unless-stopped                   # Startet den Container automatisch neu, außer er wurde manuell gestoppt
     labels:
-      - "traefik.http.routers.web.rule=PathPrefix(`/`)"      # Fängt alle sonstigen Pfade ab
+      - "traefik.http.routers.web.rule=PathPrefix(`/`)"      # Fängt alle anderen Pfade ab
       - "traefik.http.routers.web.priority=1"                # Niedrigere Priorität als `/api`, damit API eher erreichbar ist
       - "traefik.http.services.web.loadbalancer.server.port=8080"  # Interner Port der UI-Anwendung 
     depends_on:
@@ -178,7 +180,7 @@ sudo docker compose up -d
 # Bonusaufgaben
 ## 1) ufw konfigurieren
 
-> ufw (uncomplicated Firewall) ist eine Firewall, welche den Raspberry Pi schützt, indem sie nur ausgewählte Netzwerkzugriffe erlaubt. So bleiben interne Dienste und Ports vor unbefugtem Zugriff von außen sicher.
+> ufw (uncomplicated Firewall) ist eine Firewall, die den Raspberry Pi schützt, indem sie nur ausgewählte Netzwerkzugriffe erlaubt. So bleiben interne Dienste und Ports vor unbefugtem Zugriff von außen sicher.
 
 ### ufw installieren
 ```bash
@@ -224,4 +226,4 @@ Wenn es so aussieht hat alles geklappt und die Firewall ist aktiviert.
 
 ## 2) Reverse Proxy einrichten
 
-Die Einrichtung des Reverse Proxys wurde in der docker-compose.yml durchgeführt, dafür wurde ein neuer Traefik Container hochgezogen, die Endpunkt der API und UI entfernt und stattdessen durch ein Label gesagt, wie sie erreichbar sein sollen.
+Die Einrichtung des Reverse Proxys wurde in der docker-compose.yml durchgeführt, dafür wurde ein neuer Traefik Container hochgezogen, die Endpunkte der API und UI entfernt und stattdessen durch ein Label gesagt, wie sie erreichbar sein sollen.
