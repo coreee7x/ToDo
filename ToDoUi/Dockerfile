@@ -2,6 +2,8 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
+ENV ASPNETCORE_URLS=http://+:80
+
 # Kopiere und restore Abhängigkeiten
 COPY ToDoUi/*.csproj ./
 RUN dotnet restore
