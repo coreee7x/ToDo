@@ -22,6 +22,7 @@
    Gateway=192.168.24.254
    DNS=192.168.24.254
    ```
+   Gateway und DNS müssen so angepasst werden, dass sie zu dem eigenen Netzwerk passen. Als IP-Adresse kann eine beliebige freie im Netzwerk gewählt werden. 
 
 3. Netzwerkdienst aktivieren und neu starten:
    ```bash
@@ -38,6 +39,7 @@
 sudo adduser fernzugriff                # Passwort: Test123
 sudo usermod -aG sudo fernzugriff       # Sudo Rechte vergeben
 ```
+>Während der Benutzererstellung wirst du zur Eingabe eines Passworts aufgefordert. Danach folgen weitere optionale Angaben (wie Name, >Telefonnummer usw.), die leer gelassen werden können.
 
 ### Benutzer `willi` erstellen:
 ```bash
@@ -70,6 +72,7 @@ exit
 ## Repository vom Programm holen
 
 ### Möglichkeit 1: Manuell per SSH oder Dateiübertragung
+Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (bspw. über VS Code) das Repository einfach per Drag und Drop auf den Raspberry Pi ziehen. Wenn sich die Software allerdings öfters ändert ist es meist einfacher mit Möglichkeit 2 das Repo auf den Pi zu bekommen.
 
 ### Möglichkeit 2: Per `git clone`
 
