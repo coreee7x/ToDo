@@ -39,13 +39,13 @@
 sudo adduser fernzugriff                # Passwort: Test123
 sudo usermod -aG sudo fernzugriff       # Sudo Rechte vergeben
 ```
->Während der Benutzererstellung wirst du zur Eingabe eines Passworts aufgefordert. Danach folgen weitere optionale Angaben (wie Name, >Telefonnummer usw.), die leer gelassen werden können.
 
 ### Benutzer `willi` erstellen:
 ```bash
 sudo adduser willi                      # Passwort: Test123
 sudo usermod -s /usr/sbin/nologin willi # SSH Rechte entfernen
 ```
+Während der Benutzererstellung wirst du zur Eingabe eines Passworts aufgefordert. Danach folgen weitere optionale Angaben (wie Name, Telefonnummer usw.), die leer gelassen werden können.
 
 ---
 
@@ -65,7 +65,7 @@ sudo usermod -aG docker fernzugriff
 ```bash
 exit
 ```
-> Danach erneut mit dem Benutzer einloggen, damit die Gruppenzugehörigkeit aktiv wird.
+> Danach erneut mit dem Benutzer einloggen, damit die Rechte aktiviert werden.
 
 ---
 

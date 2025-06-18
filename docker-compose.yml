@@ -12,6 +12,8 @@ services:
       - "80:80"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    labels:
+      - "traefik.http.routers.traefik.rule=PathPrefix(`/dashboard`)"
   todoapi:
     container_name: ToDoApi
     build: ToDoApi
@@ -29,6 +31,6 @@ services:
     labels:
       - "traefik.http.routers.web.rule=PathPrefix(`/`)"
       - "traefik.http.routers.web.priority=1"
-      - "traefik.http.services.web.loadbalancer.server.port=5000"
+      - "traefik.http.services.web.loadbalancer.server.port=80"
     depends_on:
       - todoapi
