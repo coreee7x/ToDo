@@ -107,53 +107,61 @@ Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (bspw. übe
 version: "3.9"
 
 services:
+# Reverse Proxy Container
   traefik:
     image: traefik:v2.11
     container_name: traefik
     command:
-      - "--api.dashboard=true"
-      - "--providers.docker=true"
-      - "--entrypoints.web.address=:80"
-      - "--log.level=DEBUG"
+      - "--api.dashboard=true"                 # Aktiviert das Traefik-Dashboard zur Überwachung
+      - "--providers.docker=true"              # Aktiviert die automatische Konfiguration basierend auf Docker-Labels
+      - "--entrypoints.web.address=:80"        # Legt den EntryPoint für HTTP auf Port 80 fest
+      - "--log.level=DEBUG"                    # Detailliertes Logging für Debugging aktivieren
+# Über Standardport erreichbar (alles läuft über den Proxy)
     ports:
-      - "80:80"
+      - "80:80"                                # Exposed Traefik auf Port 80 nach außen
+# Das Volume sorgt dafür, dass die Daten des Proxys auch nach einem Neustart/Build gespeichert bleiben
     volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"  
+# Labels
     labels:
-      - "traefik.http.routers.traefik.rule=PathPrefix(`/dashboard`) || PathPrefix(`/api`)"
-      - "traefik.http.routers.traefik.service=api@internal"
-      - "traefik.http.routers.traefik.entrypoints=web"
+      - "traefik.http.routers.traefik.rule=PathPrefix(`/dashboard`) || PathPrefix(`/api`)"  # Zugriff auf Dashboard und internen API-Endpunkt
+      - "traefik.http.routers.traefik.service=api@internal"  # Interner Service für das Dashboard
+      - "traefik.http.routers.traefik.entrypoints=web"       # Verwendet den HTTP EntryPoint (Port 80)
     networks:
       - traefik-net
 
+# Backend-API Container
   todoapi:
     container_name: ToDoApi
-    build: ToDoApi
-    restart: unless-stopped
+    build: ToDoApi                             # Verwendet das lokale Build-Context-Verzeichnis `ToDoApi`
+    restart: unless-stopped                   # Startet den Container automatisch neu, außer er wurde manuell gestoppt
     labels:
-      - "traefik.http.routers.api.rule=PathPrefix(`/api`)"
-      - "traefik.http.routers.api.priority=10"
-      - "traefik.http.services.api.loadbalancer.server.port=3000"
-      - "traefik.http.middlewares.api-strip.stripprefix.prefixes=/api"
-      - "traefik.http.routers.api.middlewares=api-strip"
+      - "traefik.http.routers.api.rule=PathPrefix(`/api`)"   # Leitet alle Anfragen mit /api an diesen Service
+      - "traefik.http.routers.api.priority=10"               # Priorität gegenüber allgemeineren Regeln
+      - "traefik.http.services.api.loadbalancer.server.port=3000"  # Interner Port der API-Anwendung
+      - "traefik.http.middlewares.api-strip.stripprefix.prefixes=/api"  # Entfernt /api aus dem Pfad vor Weiterleitung
+      - "traefik.http.routers.api.middlewares=api-strip"     # Middleware wird dem Router zugewiesen
     networks:
       - traefik-net
+
+# Frontend-UI Container
   todoui:
     container_name: ToDoUi
-    build: ToDoUi
-    restart: unless-stopped
+    build: ToDoUi                              # Verwendet das lokale Build-Context-Verzeichnis `ToDoUi`
+    restart: unless-stopped                   # Startet den Container automatisch neu, außer er wurde manuell gestoppt
     labels:
-      - "traefik.http.routers.web.rule=PathPrefix(`/`)"
-      - "traefik.http.routers.web.priority=1"
-      - "traefik.http.services.web.loadbalancer.server.port=80"
+      - "traefik.http.routers.web.rule=PathPrefix(`/ui`)"      # Fängt alle sonstigen Pfade ab
+      - "traefik.http.routers.web.priority=1"                # Niedrigere Priorität als `/api`, damit API eher erreichbar ist
+      - "traefik.http.services.web.loadbalancer.server.port=8080"  # Interner Port der UI-Anwendung 
     depends_on:
-      - todoapi
+      - todoapi                                 # Startet `ToDoUi` erst, wenn `ToDoApi` verfügbar ist
     networks:
       - traefik-net
 
 networks:
-  traefik-net:
-    driver: bridge
+  traefik-net:                                  # Alle Container im gleichen Netzwerk
+    driver: bridge                              # Standard Docker-Netzwerktyp (lokales virtuelles Netzwerk)
+
 ```
 
 Falls du dich noch nicht im Projektverzeichnis befindest:
@@ -216,3 +224,4 @@ Wenn es so aussieht hat alles geklappt und die Firewall ist aktiviert.
 
 ## 2) Reverse Proxy einrichten
 
+Die Einrichtung des Reverse Proxys wurde in der docker-compose.yml durchgeführt, dafür wurde ein neuer Traefik Container hochgezogen, die Endpunkt der API und UI entfernt und stattdessen durch ein Label gesagt, wie sie erreichbar sein sollen.
