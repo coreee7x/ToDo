@@ -103,6 +103,59 @@ Wenn man schon über SSH mit dem Raspberry Pi verbunden ist kann man (bspw. übe
 
 ## Docker-Container starten
 
+```yaml
+version: "3.9"
+
+services:
+  traefik:
+    image: traefik:v2.11
+    container_name: traefik
+    command:
+      - "--api.dashboard=true"
+      - "--providers.docker=true"
+      - "--entrypoints.web.address=:80"
+      - "--log.level=DEBUG"
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    labels:
+      - "traefik.http.routers.traefik.rule=PathPrefix(`/dashboard`) || PathPrefix(`/api`)"
+      - "traefik.http.routers.traefik.service=api@internal"
+      - "traefik.http.routers.traefik.entrypoints=web"
+    networks:
+      - traefik-net
+
+  todoapi:
+    container_name: ToDoApi
+    build: ToDoApi
+    restart: unless-stopped
+    labels:
+      - "traefik.http.routers.api.rule=PathPrefix(`/api`)"
+      - "traefik.http.routers.api.priority=10"
+      - "traefik.http.services.api.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.api-strip.stripprefix.prefixes=/api"
+      - "traefik.http.routers.api.middlewares=api-strip"
+    networks:
+      - traefik-net
+  todoui:
+    container_name: ToDoUi
+    build: ToDoUi
+    restart: unless-stopped
+    labels:
+      - "traefik.http.routers.web.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.web.priority=1"
+      - "traefik.http.services.web.loadbalancer.server.port=80"
+    depends_on:
+      - todoapi
+    networks:
+      - traefik-net
+
+networks:
+  traefik-net:
+    driver: bridge
+```
+
 Falls du dich noch nicht im Projektverzeichnis befindest:
 ```bash
 cd <Verzeichnis>
